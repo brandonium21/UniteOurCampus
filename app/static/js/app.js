@@ -3,7 +3,7 @@ angular.module('Unite our campus', ['ngResource', 'ngRoute', 'ui.bootstrap', 'ui
   .config(['$routeProvider', function ($routeProvider) {
     $routeProvider
       .when('/', {
-        templateUrl: 'views/home/home.html',
+        templateUrl: 'views/register/register.html',
         controller: 'HomeController'})
       .when('/register', {
         templateUrl: 'views/register/register.html',
