@@ -51,3 +51,5 @@ def reg():
         wks.update_acell('F' + str(cellNumber), ethnicity)
         # -----------------------------------------------
 
+
+    return app.send_static_file('index.html')

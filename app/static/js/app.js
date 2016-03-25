@@ -3,10 +3,10 @@ angular.module('Unite our campus', ['ngResource', 'ngRoute', 'ui.bootstrap', 'ui
   .config(['$routeProvider', function ($routeProvider) {
     $routeProvider
       .when('/', {
-        templateUrl: 'views/home/home.html', 
-        controller: 'HomeController'});
+        templateUrl: 'views/home/home.html',
+        controller: 'HomeController'})
       .when('/register', {
-        templateUrl: 'views/register/register.html', 
+        templateUrl: 'views/register/register.html',
         controller: 'RegisterController'})
       .otherwise({redirectTo: '/'});
   }]);
