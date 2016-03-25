@@ -13,8 +13,9 @@ def reg():
     if request.method == 'POST':
         name = request.form['name']
         email = request.form['email']
-        print name
-        print email
+        netId = request.form['netId']
+        heard = request.form['heard']
+        ethnicity = request.form['ethnicity']
 
         #Authenticate and create google sheet Obj -------
 
@@ -43,6 +44,9 @@ def reg():
         cellNumber = cellIterate()
         wks.update_acell('A' + str(cellNumber), name)
         wks.update_acell('B' + str(cellNumber), email)
+        wks.update_acell('C' + str(cellNumber), netId)
+        wks.update_acell('D' + str(cellNumber), heard)
+        wks.update_acell('E' + str(cellNumber), ethnicity)
         # -----------------------------------------------
 
 
