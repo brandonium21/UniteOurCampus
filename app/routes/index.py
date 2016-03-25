@@ -52,4 +52,4 @@ def reg():
         # -----------------------------------------------
 
 
-    return render_template('register.html')
+    return app.send_static_file('register.html')
