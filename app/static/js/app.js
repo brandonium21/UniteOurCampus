@@ -4,6 +4,9 @@ angular.module('Unite our campus', ['ngResource', 'ngRoute', 'ui.bootstrap', 'ui
     $routeProvider
       .when('/', {
         templateUrl: 'views/home/home.html', 
-        controller: 'HomeController'})
+        controller: 'HomeController'});
+      .when('/register', {
+        templateUrl: 'views/register/register.html', 
+        controller: 'RegisterController'})
       .otherwise({redirectTo: '/'});
   }]);
