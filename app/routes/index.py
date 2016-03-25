@@ -11,7 +11,8 @@ def root():
 @app.route('/register', methods=['GET', 'POST'])
 def reg():
     if request.method == 'POST':
-        name = request.form['name']
+        Fname = request.form['first']
+        Lname = request.form['last']
         email = request.form['email']
         netId = request.form['netId']
         heard = request.form['heard']
@@ -42,11 +43,12 @@ def reg():
         # Add person to google sheet --------------------
 
         cellNumber = cellIterate()
-        wks.update_acell('A' + str(cellNumber), name)
-        wks.update_acell('B' + str(cellNumber), email)
-        wks.update_acell('C' + str(cellNumber), netId)
-        wks.update_acell('D' + str(cellNumber), heard)
-        wks.update_acell('E' + str(cellNumber), ethnicity)
+        wks.update_acell('A' + str(cellNumber), Fname)
+        wks.update_acell('B' + str(cellNumber), Lname)
+        wks.update_acell('C' + str(cellNumber), email)
+        wks.update_acell('D' + str(cellNumber), netId)
+        wks.update_acell('E' + str(cellNumber), heard)
+        wks.update_acell('F' + str(cellNumber), ethnicity)
         # -----------------------------------------------
 
 
