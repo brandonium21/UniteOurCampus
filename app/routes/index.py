@@ -4,6 +4,7 @@ import json
 import gspread
 from oauth2client.client import SignedJwtAssertionCredentials
 
+
 @app.route('/', methods=['GET', 'POST'])
 def root():
     if request.method == 'POST':
@@ -12,7 +13,6 @@ def root():
         email = request.form['email']
         netId = request.form['netId']
         heard = request.form['heard']
-        ethnicity = request.form['ethnicity']
 
         #Authenticate and create google sheet Obj -------
 
@@ -27,9 +27,9 @@ def root():
         def cellIterate():
             val = wks.acell('A1').value
             counter = 1
-            while val :
-                counter +=1
-                cell = str( 'A' + str(counter))
+            while val:
+                counter += 1
+                cell = str('A' + str(counter))
                 val = wks.acell(cell).value
                 print counter
                 pass
