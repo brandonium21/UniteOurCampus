@@ -1,5 +1,102 @@
 body {
   margin-top: 60px;
   padding: 10px;
-  background-color: #ECF0F1;
+  background-color: #122847;
+  	font-family: 'Roboto', sans-serif;
+	font-weight: 300;
+}
+
+.titlebox{
+	text-align: center;
+	border: 0px;
+	margin: 0px;
+	padding-bottom: 120px;
+	padding-left: 20px;
+	position: relative;
+	bottom: 25%;
+}
+.title{
+	opacity: 0;
+	display: inline-block;
+	text-align: left;
+	position: absolute;
+	font-family: 'Roboto', sans-serif;
+	font-weight: 900;
+	font-size: 10em;
+	color: #89cff0;
+	margin: -20px;
+}
+
+.firstpage{
+	opacity: 0;
+	text-align: center;
+	background-color: #122847;
+	background-image: url('../UniteOurCampusBGFinal.png');
+	background-repeat: no-repeat; 
+	background-attachment: fixed;
+	background-position: center;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: contain;
+	display: none;
+
+}
+.heading{
+	text-align: center;
+	font-family: 'Roboto', sans-serif;
+	font-weight: 500;
+	font-size: 7em;
+	color: #122847;
+	padding-bottom: 20px;
+}
+.secondpage{
+  background-color: #89cff0;	
+}
+.about{
+	text-align: center;
+	font-family: 'Roboto', sans-serif;
+	color:#122847;
+	font-weight: 300;
+	font-size: 3em;
+	padding-top: 20px;
+	padding-left: 100px;
+	padding-right: 100px; 
+}
+.thirdpage{
+	text-align: center;
+	background-color: #FFFFFF;
+}
+.fourthpage{
+ 	text-align: center;
+	background-color: #FA6300;
+}
+
+.form-group{
+	text-align: top;
+	font-family: 'Roboto', sans-serif;
+	font-weight: 300;
+	font-size: 2em;
+}
+.form-control{
+	margin: auto;
+	border : 3px solid #122847;
+	font-size: 16px;
+	width: 300px;
+}
+.button{
+	margin-top: 20px;
+	padding-left: 15px;
+	padding-right: 15px;
+	background-color: #FA6300;
+    text-align: center;
+    color: #122847;
+    font-size: 40px;
+	border-radius: 2px;
+	border: 2px solid #122847;
+}
+
+button:hover {
+  background-color: #122847;
+  color: #FFFFFF;
 }
