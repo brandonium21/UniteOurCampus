@@ -4,12 +4,8 @@ import json
 import gspread
 from oauth2client.client import SignedJwtAssertionCredentials
 
-@app.route('/')
+@app.route('/', methods=['GET', 'POST'])
 def root():
-    return app.send_static_file('index.html')
-
-@app.route('/register', methods=['GET', 'POST'])
-def reg():
     if request.method == 'POST':
         Fname = request.form['first']
         Lname = request.form['last']
@@ -50,6 +46,7 @@ def reg():
         wks.update_acell('E' + str(cellNumber), heard)
         wks.update_acell('F' + str(cellNumber), ethnicity)
         # -----------------------------------------------
+    return app.send_static_file('index.html')
 
 
     return app.send_static_file('index.html')
