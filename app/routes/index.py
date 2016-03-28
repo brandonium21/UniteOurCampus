@@ -44,9 +44,6 @@ def root():
         wks.update_acell('C' + str(cellNumber), email)
         wks.update_acell('D' + str(cellNumber), netId)
         wks.update_acell('E' + str(cellNumber), heard)
-        wks.update_acell('F' + str(cellNumber), ethnicity)
+        #wks.update_acell('F' + str(cellNumber), ethnicity)
         # -----------------------------------------------
-    return app.send_static_file('index.html')
-
-
     return app.send_static_file('index.html')
