@@ -7,3 +7,13 @@ angular.module('Unite our campus', ['ngResource', 'ngRoute', 'ui.bootstrap', 'ui
         controller: 'HomeController'})
       .otherwise({redirectTo: '/'});
   }]);
+
+$(document).ready(function() {
+    $('#fullpage').fullpage({
+        sectionsColor: ['#122847', '#89cff0', '#FFFFFF', '#FA6300'],
+        css3: true,
+        scrollingSpeed: 1000
+    });
+    $(".firstpage").animate({"opacity":"1"}, 1500).delay(1000);
+    $(".title").animate({"opacity":"1"}, 1500);
+});
