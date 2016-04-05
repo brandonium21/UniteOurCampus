@@ -89,7 +89,7 @@ body {
 	text-align: center;
 	font-family: 'Roboto', sans-serif;
 	font-weight: 500;
-	font-size: 6em;
+	font-size: 5em;
 	color: #122847;
 }
 .secondpage{
@@ -129,6 +129,12 @@ body {
 .schedule{
 	font-weight: bold;
 }
+.breakoutleft{
+	text-align: right !important;
+}
+.breakoutright{
+	text-align: left !important;
+}
 .breakout{
 	font-style: italic;
 	font-size: 1.5em;
@@ -143,10 +149,14 @@ body {
 	width:300px;
 	margin:auto;
 }
+.highlight{
+	color: #CC0033;
+}
 .speaker{
 	font-weight: bold;
 	font-size: 3em;
 	text-align: left;
+	color: #424f4f;
 }
 .speakercontainer{
 	text-align: center;
@@ -195,4 +205,31 @@ body {
 button:hover {
   background-color: #122847;
   color: #FFFFFF;
+}
+
+.sponsorheading{
+	color: #FFFFFF;
+	padding-bottom: 10%;
+}
+.cubelogo{
+	height: 50%;
+	width: 50%;
+}
+.msalogo{
+	height: 45%;
+	width: 45%;
+}
+.center-block {
+  margin-left: auto;
+  margin-right: auto;
+}
+.teamheading{
+	color: #FFFFFF;
+	padding-bottom: 5%;
+}
+.teamlist{
+	text-align: center;
+	margin: 0 auto;
+	font-size: 2em;
+ 	color: #122847;
 }
