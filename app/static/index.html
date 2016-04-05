@@ -12,13 +12,14 @@
   <link href="css/app.css" rel="stylesheet">
 </head>
 <body>
-  <!--
+
   <ul id="menu">
-	<li data-menuanchor="firstPage" class="active"><a href="#firstPage">Home</a></li>
-	<li data-menuanchor="secondPage"><a href="#secondPage">Come Together</a></li>
-	<li data-menuanchor="3rdPage"><a href="#3rdPage">Register</a></li>
+	<li data-menuanchor="firstpage" class="active"><a href="#firstpage">Home</a></li>
+	<li data-menuanchor="secondpage"><a href="#secondpage">Come Together</a></li>
+	<li data-menuanchor="thirdpage"><a href="#thirdpage">Speakers &amp; Schedule</a></li>
+	<li data-menuanchor="fourthpage"><a href="#fourthpage">Register</a></li>
   </ul>
-  -->
+
   <div id="fullpage">
     <div class="section firstpage"> 
       <div class="titlebox">
@@ -31,37 +32,103 @@
 
     <div class="section secondpage">
       <h1 class="heading">Come Together</h1>
-      <p class="about"> Our campus stands divded. Despite having one of the most diverse body of students in the country, U of I faces the problem of social segregation among all races. A person who belongs to one race is likely to only have...</p>
+      <p class="about"> Unite Our Campus is a rally. We believe that racial barriers crumble as conversations begin. The purpose of our grassroots movement is to create a platform to facilitate interaction among people from different walks of life.<br  />
+      <br  />
+      We intend to energize inter-cultural dialogue amongst faculty, staff and students of The University of Illinois at Urbana-Champaign. On <b>April 16<sup>th</sup> 2016</b>, we will gather to discuss <b>Media Representation of Races</b>. Through a series of keynote speakers and small breakout sessions, we will catalyze discussion about the distortion of our society through the lens of mass media.</p>
     </div>
 
     <div class="section thirdpage">
-      <h1 class="heading">Event Information</h1>
-      <p class="about">When</p>
-       <p class="about">Where</p>
-      <p class="about">Who</p>
-    </div>
+	    <div class="slide slidepage1">
+	    	<h1 class="heading">Schedule</h1>
+		    <h2 class="schedule"><b>April 16<sup>th</sup> 2016</b></h2>
+		   	<div class="headinglinecontainer"><hr class="headingline"></div>
+	    	<h2 class="schedule">9:00 AM — Breakfast / Registration</h2>
+		    <div class="linecontainer"><hr class="line"></div>
+		    <h2 class="schedule">10:00 AM — Keynote: Diversity in Film</h2>
+		    <div class="linecontainer"><hr class="line"></div>
+		    <h2 class="schedule">Breakouts</h2>
+		    <div class="row">
+		    	<div class="col-xs-6 col-md-4">
+			    	<h2 class="breakout">Physical Ability</h2>
+			    	<h2 class="breakout">Faith</h2>
+			    	<h2 class="breakout">International</h2>
+			    </div>
+			    <div class="col-xs-6 col-md-4">
+			    	<h2 class="breakout">12:00 PM — Lunch</h2>
+			 	</div>
+		    	<div class="col-xs-6 col-md-4">
+			    	<h2 class="breakout">Gender</h2>
+			    	<h2 class="breakout">Exoticism</h2>
+			    	<h2 class="breakout">Shadism</h2>
+			 	</div>
+			</div>
+		 	<div class="linecontainer"><hr class="line"></div>
+		 	<h2 class="schedule">2:30 PM — Closing</h2>
+		</div>
+	    <div class="slide slidepage2">
+	       	<h1 class="heading">Keynote Speakers</h1>
+		   	<div class="headinglinecontainer"><hr class="headingline"></div>
+		   	<div class="speakercontainer">
+		       	<h2 class="speaker">Dr. Janice Collins</h2>
+		       	<p class="aboutspeaker">
+			       	Dr. Janice Marie Collins is a multi Emmy, Associated Press, Best of Gannett award winning journalist with more than 20 years of experience in the journalism industry and an award-winning professor with 14 years of teaching experience on the university level.<br />
+			       	<br />
+			       	Some of the nationally and internationally aired publications include the Oklahoma City Bombing, the Susan Smith murders, broadcasts of 300 Days: Dreams of the Olympic Games, Superbowl Special and a 3-parter in-depth story on inner city children left behind and how they survive.
+		       	</p>
+	    	</div>
+	    </div>
+	    <div class="slide slidepage3">
+	       	<div class="speakercontainer">
+		       	<h2 class="speaker">Rebecca Parish</h2>
+		       	<p class="aboutspeaker">
+			       	Rebecca Parrish has run her Chicago-based film company, Interchange Productions, since 2007. She has worked as an editor and cinematographer with Peabody and Sundance award-winner, Judith Helfand, Kindling Group and Kartemquin Films. <br />
+			       	<br />
+					In 2012 Rebecca produced and directed the interactive web documentary and engagement campaign, Protect Our Defenders, telling the stories of military sexual assault survivors as part of an advocacy campaign to reform the military justice system.
+		       	</p>
+	    	</div>
+	    </div>
+	    <div class="slide slidepage4">
+		     <div class="speakercontainer">
+		       	<h2 class="speaker">Gil Robertson</h2>
+		       	<p class="aboutspeaker">
+			       	Gil Robertson is the co-founder and president of the African American Film Critics Association, as well as the founder of the Robertson Treatment’s Media Workshop, an annual journalism initiative presented at the Auburn Avenue Research Library in Atlanta, GA and the Schomburg Center for Research in Black Culture in New York, NY.<br />
+			       	<br />
+			       	On television, Robertson has shared his expertise on topical issues for numerous shows that includes: CNN, HLN, MSNBC, E! Entertainment and NPR.He is a renowned lecturer who speaks on issues that impact professional growth strategies and personal development.
+		       	</p>
+	    	</div>
+	    </div>
+	</div>
+
     
     <div class="section fourthpage">
       <h1 class="heading">Register</h1>
-      <form id='form' action='/register' method="POST">
-    	<div class="form-group">
-	        First name <br>
-	        <input type="text" class="form-control" name="first" placeholder="John" required>
-	        Last name <br>
-	        <input type="text" class="form-control" name="last" placeholder="Subramaniam" required> 
-	        Email <br>
-	        <input type="text" class="form-control" name="email" placeholder="example@example.com" required> 
-	        NetID <br>
-	        <input type="text" class="form-control" name="netId" placeholder="jkilby50" required> 
-	        How did you hear about us? <br>
-	        <input type="text" class="form-control" name="heard" placeholder="Facebook, flyer, friend..." required>
-	        <button class="button" type='submit'>Submit</button>
+      	<div class="row">
+	      <form id='form' action='/register' method="POST">
+	    	<div class="form-group">
+	    		<div class="col-xs-6">
+		        First name <br>
+		        <input type="text" class="form-control" name="first" placeholder="John" required>
+		        Last name <br>
+		        <input type="text" class="form-control" name="last" placeholder="Subramaniam" required> 
+		        Email <br>
+		        <input type="text" class="form-control" name="email" placeholder="example@example.com" required> 
+		        NetID <br>
+		        <input type="text" class="form-control" name="netId" placeholder="jkilby50" required> 
+		        </div>
+		        <div class="col-xs-6">
+		        How did you hear about us? <br>
+		        <input type="text" class="form-control" name="heard" placeholder="Facebook, flyer, friend..." required>
+		        Any dietary restrictions <br>
+		        <input type="text" class="form-control" name="heard" placeholder="Vegan, nut allergy etc.." required>
+		        Would you like to hear more from us?<br>
+		        <input type="text" class="form-control" name="heard" placeholder="Yes/No" required>
+		        </div>
+	    	</div>
     	</div>
-      </form>
+		<button class="button" type='submit'>Submit</button>
+	    </form>
     </div>
   </div>
-
-  <div class="container" ng-view></div>
 
   <script src="lib/jquery/dist/jquery.js"></script>
   <script src="lib/jquery-ui/jquery-ui.js"></script>
