@@ -13,6 +13,8 @@ def root():
         email = request.form['email']
         netId = request.form['netId']
         heard = request.form['heard']
+        heard = request.form['dietary']
+        heard = request.form['hearmore']
 
         #Authenticate and create google sheet Obj -------
 
@@ -44,6 +46,8 @@ def root():
         wks.update_acell('C' + str(cellNumber), email)
         wks.update_acell('D' + str(cellNumber), netId)
         wks.update_acell('E' + str(cellNumber), heard)
+        wks.update_acell('F' + str(cellNumber), dietary)
+        wks.update_acell('G' + str(cellNumber), hearmore)
         #wks.update_acell('F' + str(cellNumber), ethnicity)
         # -----------------------------------------------
     return app.send_static_file('index.html')
