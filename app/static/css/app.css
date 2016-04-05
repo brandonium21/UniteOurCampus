@@ -1,13 +1,57 @@
 body {
-  margin-top: 60px;
-  padding: 10px;
-  background-color: #122847;
+  	background-color: #122847;
   	font-family: 'Roboto', sans-serif;
 	font-weight: 300;
 }
 
+#menu li {
+	display:inline-block;
+	margin: 10px;
+	color: #000;
+	background:#fff;
+	background: rgba(255,255,255, 0.5);
+	-webkit-border-radius: 10px;
+			border-radius: 10px;
+}
+#menu li.active{
+	background:#666;
+	background: rgba(0,0,0, 0.5);
+	color: #fff;
+}
+#menu li a{
+	text-decoration:none;
+	color: #000;
+}
+#menu li.active a:hover{
+	color: #000;
+}
+#menu li:hover{
+	background: rgba(255,255,255, 0.8);
+}
+#menu li a,
+#menu li.active a{
+	padding: 9px 18px;
+	display:block;
+}
+#menu li.active a{
+	color: #fff;
+}
+#menu{
+	position:fixed;
+	top:0;
+	left:0;
+	height: 40px;
+	z-index: 70;
+	width: 100%;
+	padding: 0;
+	margin:0;
+}
+.section{
+	margin: 0px;
+}
 .titlebox{
 	text-align: center;
+	vertical-align: center;
 	border: 0px;
 	margin: 0px;
 	padding-bottom: 120px;
@@ -22,11 +66,10 @@ body {
 	position: absolute;
 	font-family: 'Roboto', sans-serif;
 	font-weight: 900;
-	font-size: 10em;
+	font-size: 8em;
 	color: #89cff0;
 	margin: -20px;
 }
-
 .firstpage{
 	opacity: 0;
 	text-align: center;
@@ -35,10 +78,10 @@ body {
 	background-repeat: no-repeat; 
 	background-attachment: fixed;
 	background-position: center;
-	-webkit-background-size: cover;
-	-moz-background-size: cover;
-	-o-background-size: cover;
-	background-size: contain;
+	-webkit-background-size: 80%;
+	-moz-background-size: 80%;
+	-o-background-size: 80%;
+	background-size: 80%;
 	display: none;
 
 }
@@ -46,9 +89,8 @@ body {
 	text-align: center;
 	font-family: 'Roboto', sans-serif;
 	font-weight: 500;
-	font-size: 7em;
+	font-size: 6em;
 	color: #122847;
-	padding-bottom: 20px;
 }
 .secondpage{
   background-color: #89cff0;	
@@ -58,7 +100,7 @@ body {
 	font-family: 'Roboto', sans-serif;
 	color:#122847;
 	font-weight: 300;
-	font-size: 3em;
+	font-size: 2em;
 	padding-top: 20px;
 	padding-left: 100px;
 	padding-right: 100px; 
@@ -67,11 +109,66 @@ body {
 	text-align: center;
 	background-color: #FFFFFF;
 }
+.headingline{
+	background-color: #89cff0;
+	height: 2px;
+}
+.headinglinecontainer{
+	width: 960px;
+	margin: auto;
+	padding-top: 0px;
+	padding-bottom: 10px;
+}
+.schedulecol{
+	-webkit-column-count: 2; /* Chrome, Safari, Opera */
+    -moz-column-count: 2; /* Firefox */
+    column-count: 2;
+    -webkit-column-gap: 10px; /* Chrome, Safari, Opera */
+    -moz-column-gap: 20px; /* Firefox */
+}
+.schedule{
+	font-weight: bold;
+}
+.breakout{
+	font-style: italic;
+	font-size: 1.5em;
+	padding: 0px;
+	margin: 6px;
+}
+.line{
+	background-color: #122847; 
+	height: 1px;
+}
+.linecontainer{
+	width:300px;
+	margin:auto;
+}
+.speaker{
+	font-weight: bold;
+	font-size: 3em;
+	text-align: left;
+}
+.speakercontainer{
+	text-align: center;
+	padding-left: 200px;
+	padding-right: 200px;
+}
+.aboutspeaker{
+	text-align: left;
+	font-family: 'Roboto', sans-serif;
+	color:#122847;
+	font-weight: 300;
+	font-size: 1.5em;
+	padding-top: 20px;
+
+}
+.slidepage1{
+	text-align: center;
+}
 .fourthpage{
  	text-align: center;
 	background-color: #FA6300;
 }
-
 .form-group{
 	text-align: top;
 	font-family: 'Roboto', sans-serif;
@@ -95,7 +192,6 @@ body {
 	border-radius: 2px;
 	border: 2px solid #122847;
 }
-
 button:hover {
   background-color: #122847;
   color: #FFFFFF;
