@@ -46,8 +46,11 @@ body {
 	padding: 0;
 	margin:0;
 }
+.menuwrapper{
+	text-align: center;
+}
 .section{
-	margin: 0px;
+	text-align: center;
 }
 .titlebox{
 	text-align: center;
@@ -118,13 +121,6 @@ body {
 	margin: auto;
 	padding-top: 0px;
 	padding-bottom: 10px;
-}
-.schedulecol{
-	-webkit-column-count: 2; /* Chrome, Safari, Opera */
-    -moz-column-count: 2; /* Firefox */
-    column-count: 2;
-    -webkit-column-gap: 10px; /* Chrome, Safari, Opera */
-    -moz-column-gap: 20px; /* Firefox */
 }
 .schedule{
 	font-weight: bold;
@@ -227,9 +223,271 @@ button:hover {
 	color: #FFFFFF;
 	padding-bottom: 5%;
 }
-.teamlist{
+.teamlist
+{
 	text-align: center;
 	margin: 0 auto;
 	font-size: 2em;
  	color: #122847;
+}
+
+/* #### Mobile Phone in Portrait Orientation #### */
+/*@media screen and (max-device-width: 480px) and (orientation: portrait){*/
+/* Portrait and Landscape */
+@media screen 
+  and (device-width: 320px) 
+  and (device-height: 640px) 
+  and (-webkit-device-pixel-ratio: 3) {
+
+	#menu{
+		zoom: 0.8 !important;
+	}
+	.firstpage{
+		background-position: 41% 48%;
+	}
+	.title{
+		margin-top: 125px;
+		font-size: 3em;
+	}
+	.heading{
+		font-size: 2.5em;
+		padding-top: 70px;
+	}
+	.about{
+		font-size: 1em;
+		padding-top: 20px;
+		padding-left: 50px;
+		padding-right: 50px; 
+	}
+	.headinglinecontainer{
+		width: 300px;
+		padding-bottom: 0px;
+	}
+	.linecontainer{
+		width: 150px;
+
+	}
+	.schedule{
+		font-weight: initial;
+		font-size: 1.2em;
+	}
+	.breakout{
+		padding: 0px;
+		margin: 0px;
+		font-size: 1em;
+	}
+	.breakoutleft{
+		text-align: right !important;
+	}
+	.breakoutright{
+		text-align: left !important;
+	}
+	.breakoutcenter{
+		text-align: left !important;
+	}
+	.speaker{
+	font-size: 1.2em;
+	text-align: left;
+	color: #424f4f;
+	}
+	.speakercontainer{
+		text-align: left !important;
+		padding-left: 20px;
+		padding-right: 10px;
+		padding-bottom: 0px;
+	}
+	.aboutspeaker{
+		font-family: 'Roboto', sans-serif;
+		color:#122847;
+		font-weight: 300;
+		font-size: 1em;
+	}
+	#form{
+		zoom: 0.55 !important;
+	}
+	.teamlist{
+		text-align: center;
+		margin: 0 auto;
+		font-size: 1.5em;
+	 	color: #122847;
+	}
+	.registersub{
+		font-size: 2em;
+	}
+	.button{
+		zoom: 0.8 !important;
+	}
+}
+
+/*####  iPhone5 in Portrait Orientation #### */
+/*@media screen and (max-device-width: 320px) and (orientation: portrait)*/
+@media only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 568px)
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: portrait) {
+
+	#menu{
+		zoom: 0.7 !important;
+	}
+	.firstpage{
+		background-position: 36% 48%;
+	}
+	.title{
+		margin-top: 125px;
+		font-size: 3em;
+	}
+	.heading{
+		font-size: 2.5em;
+		padding-top: 70px;
+	}
+	.about{
+		font-size: 0.9em;
+		padding-top: 20px;
+		padding-left: 50px;
+		padding-right: 50px; 
+	}
+	.headinglinecontainer{
+		width: 280px;
+		padding-bottom: 0px;
+	}
+	.linecontainer{
+		width: 150px;
+
+	}
+	.schedule{
+		font-weight: initial;
+		font-size: 1.2em;
+	}
+	.breakout{
+		padding: 0px;
+		margin: 0px;
+		font-size: 1em;
+	}
+	.breakoutleft{
+		text-align: right !important;
+	}
+	.breakoutright{
+		text-align: left !important;
+	}
+	.breakoutcenter{
+		text-align: left !important;
+	}
+	.speaker{
+	font-size: 1.2em;
+	text-align: left;
+	color: #424f4f;
+	}
+	.speakercontainer{
+		text-align: left !important;
+		padding-left: 20px;
+		padding-right: 10px;
+		padding-bottom: 0px;
+	}
+	.aboutspeaker{
+		font-family: 'Roboto', sans-serif;
+		color:#122847;
+		font-weight: 300;
+		font-size: 1em;
+	}
+	#form{
+		zoom: 0.4 !important;
+	}
+	.registersub{
+		font-size: 2em;
+	}
+	.teamlist{
+		text-align: center;
+		margin: 0 auto;
+		font-size: 1.5em;
+	 	color: #122847;
+	}
+	.button{
+		zoom: 0.6 !important;
+	}
+}
+
+/*####  iPad in Portrait Orientation #### */
+/*@media screen and (max-device-width: 768px) and (orientation: portrait){*/
+/* Portrait */
+@media only screen 
+  and (min-device-width: 768px) 
+  and (max-device-width: 1024px) 
+  and (orientation: portrait) 
+  and (-webkit-min-device-pixel-ratio: 1) {
+
+	.firstpage{
+		background-position: 36% 48%;
+	}
+	.title{
+		margin-top: 150px;
+		font-size: 4em;
+	}
+	.heading{
+		font-size: 3.2em;
+	}
+	.about{
+		font-size: 2em;
+		padding-top: 20px;
+		padding-left: 50px;
+		padding-right: 50px; 
+	}
+	.headinglinecontainer{
+		width: 500px;
+		padding-bottom: 20px;
+	}
+	.linecontainer{
+		width: 250px;
+
+	}
+	.schedule{
+		font-weight: initial;
+		font-size: 2em;
+	}
+	.breakout{
+		padding: 0px;
+		margin: 0px;
+		font-size: 1.5em;
+	}
+	.breakoutleft{
+		text-align: right !important;
+	}
+	.breakoutright{
+		text-align: left !important;
+	}
+	.breakoutcenter{
+		text-align: left !important;
+	}
+	.speaker{
+	font-size: 2em;
+	text-align: left;
+	color: #424f4f;
+	}
+	.speakercontainer{
+		text-align: left !important;
+		padding-left: 55px;
+		padding-right: 50px;
+		padding-bottom: 0px;
+	}
+	.aboutspeaker{
+		font-family: 'Roboto', sans-serif;
+		color:#122847;
+		font-weight: 300;
+		font-size: 1.5em;
+	}
+	#form{
+		zoom: 0.8 !important;
+	}
+	.registersub{
+		font-size: 3em;
+	}
+	.teamlist{
+		text-align: center;
+		margin: 0 auto;
+		font-size: 3em;
+	 	color: #122847;
+	}
+	.button{
+		zoom: 0.8 !important;
+	}
 }
