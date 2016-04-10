@@ -13,8 +13,8 @@ def root():
         email = request.form['email']
         netId = request.form['netId']
         heard = request.form['heard']
-        heard = request.form['dietary']
-        heard = request.form['hearmore']
+        dietary = request.form['dietary']
+        hearmore = request.form['hearmore']
 
         #Authenticate and create google sheet Obj -------
 
