@@ -46,6 +46,7 @@ window.fbAsyncInit = function() {
         xfbml: true,
         version: 'v2.5'
     });
+    shareit();
 };
 
 (function(d, s, id) {
@@ -58,7 +59,7 @@ window.fbAsyncInit = function() {
     js.src = "//connect.facebook.net/en_US/sdk.js";
     fjs.parentNode.insertBefore(js, fjs);
 }(document, 'script', 'facebook-jssdk'));
-window.onload = shareit();
+
 
 function shareit() {
     FB.ui({
