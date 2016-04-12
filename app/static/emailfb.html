@@ -56,16 +56,23 @@ body {
             <p class="lead">
                 By sharing this event you are helping to bring our campus closer together.
             </p>
+            <br>
+            <button class='btn btn-success btn-lg' onclick='shareit()'>Share</button>
         </center>
     </div>
 </body>
 <script>
-window.onload = function() {
+function shareit() {
     FB.ui({
-        method: 'feed',
-        link: 'https://developers.facebook.com/docs/',
-        caption: 'An example caption',
-    }, function(response) {});
+            method: 'feed',
+            link: 'https://developers.facebook.com/docs/',
+            caption: 'An example caption',
+        }, function(response) {
+            alert('Post was published.');
+        } else {
+            alert('Post was not published.');
+        }
+    });
 };
 </script>
 
