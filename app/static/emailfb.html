@@ -47,8 +47,6 @@ body {
         fjs.parentNode.insertBefore(js, fjs);
     }(document, 'script', 'facebook-jssdk'));
     </script>
-    <div class="fb-like" data-share="true" data-width="450" data-show-faces="true">
-    </div>
     <div class="container">
         <center>
             <h1>Thanks for Sharing !</h1>
@@ -57,26 +55,28 @@ body {
                 By sharing this event you are helping to bring our campus closer together.
             </p>
             <br>
-            <button class='btn btn-success btn-lg' id='shareBtn'>Share</button>
+            <!-- <button class='btn btn-success btn-lg' id='shareBtn'>Share</button> -->
         </center>
     </div>
 </body>
 <script>
-document.getElementById("shareBtn").addEventListener("click", function() {
-
+window.onload = shareit();
+function shareit() {
     FB.ui({
         method: 'feed',
-        link: 'https://developers.facebook.com/docs/',
-        caption: 'An example caption',
+        link: 'https://www.facebook.com/events/1595216907471496/',
+        caption: 'FREE event for UIUC students with celebrity guest speakers and catered lunch Break barriers,
+        create conversation.Unite Our Campus is bringing our campus together to stand up
+        for accurate representation in the media.
+        ',
     }, function(response) {
         if (response && response.post_id) {
             alert('Post was published.');
         } else {
-            alert('Post was not published.');
+            alert('Post was not published. Thanks again');
         }
     });
-
-});
+};
 </script>
 
 </html>
