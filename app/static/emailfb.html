@@ -63,19 +63,19 @@ body {
 </body>
 <script>
 document.getElementById("shareBtn").addEventListener("click", function() {
-    function shareit() {
-        FB.ui({
-            method: 'feed',
-            link: 'https://developers.facebook.com/docs/',
-            caption: 'An example caption',
-        }, function(response) {
-            if (response && response.post_id) {
-                alert('Post was published.');
-            } else {
-                alert('Post was not published.');
-            }
-        });
-    };
+
+    FB.ui({
+        method: 'feed',
+        link: 'https://developers.facebook.com/docs/',
+        caption: 'An example caption',
+    }, function(response) {
+        if (response && response.post_id) {
+            alert('Post was published.');
+        } else {
+            alert('Post was not published.');
+        }
+    });
+
 });
 </script>
 
