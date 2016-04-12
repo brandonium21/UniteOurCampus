@@ -51,3 +51,8 @@ def root():
         #wks.update_acell('F' + str(cellNumber), ethnicity)
         # -----------------------------------------------
     return app.send_static_file('index.html')
+
+
+@app.route('/shareEmailFacebook', methods=['GET', 'POST'])
+def emailFb():
+    return app.send_static_file('emailfb.html')
