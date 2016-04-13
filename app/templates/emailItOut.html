@@ -1,0 +1,57 @@
+<!doctype html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Unite Our Campus</title>
+    <link href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css" rel="stylesheet">
+    <link href="../static/lib/jquery-ui/themes/smoothness/jquery-ui.css" rel="stylesheet" />
+    <link href='https://fonts.googleapis.com/css?family=Roboto:900,300,500' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="static/css/jquery.fullPage.css" />
+    <link href="../static/css/app.css" rel="stylesheet">
+</head>
+<style>
+body {
+    background-color: #fff;
+    height: 100%;
+}
+</style>
+
+<body>
+    {% if emails %}
+    <div class="row">
+        <div class="col-md-4">
+            <div class='jumbotron'>
+                <div class='container'>
+                    <ul>
+                        <li>
+                            <h4>Number of Emails/Attendees</h4>
+                        </li>
+                        <h3 style="color: blue;">{{emails|length}}</h3>
+                        <hr>
+                    </ul>
+                    <button class="btn btn-success btn-lg" action='/sendTheemailToTheMasses' method="POST">Send The Emails</button>
+                    {{ done }}
+                </div>
+            </div>
+        </div>
+        <div class="col-md-8">
+            <div class='jumbotron'>
+                <div class='container'>
+                    <ul>
+                        {% for email in emails %}
+                        <li>
+                            <h4>{{ email }}</4>
+                        </li>
+                        {% endfor %} {% else %}
+                        <h4>None</h4>
+                        <hr>{% endif %}
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

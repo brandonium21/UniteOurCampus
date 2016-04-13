@@ -36,6 +36,8 @@ body {
             </p>
             <br>
             <!-- <button class='btn btn-success btn-lg' id='shareBtn'>Share</button> -->
+            <a target="_blank" href="https://calendar.google.com/calendar/event?action=TEMPLATE&amp;tmeid=OHR1ZjRqcW5lNHY2ODU2MWFpMmN0bDZsdmcgMDNmcjdibzEwcGczODY0c3ZtOHMzbjVyNnNAZw&amp;tmsrc=03fr7bo10pg3864svm8s3n5r6s%40group.calendar.google.com"><img border="0" src="https://www.google.com/calendar/images/ext/gc_button1_en.gif"></a>
+            <p>Please save this event in your calendars.</p>
         </center>
     </div>
 </body>
@@ -68,9 +70,9 @@ function shareit() {
         caption: ' Break barriers,create conversation. Bring our campus together to stand up for accurate media representation.'
     }, function(response) {
         if (response && response.post_id) {
-            alert('Post was published.');
+            alert('Post was published.  Thanks again!');
         } else {
-            alert('Post was not published. Thanks again');
+            alert('Post was not published.');
         }
     });
 };
