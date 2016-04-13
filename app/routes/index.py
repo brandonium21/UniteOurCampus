@@ -3,7 +3,9 @@ from flask import redirect, render_template, render_template_string, request, ur
 import json
 import gspread
 from oauth2client.client import SignedJwtAssertionCredentials
-
+import smtplib
+from email.mime.multipart import MIMEMultipart
+from email.mime.text import MIMEText
 
 @app.route('/', methods=['GET', 'POST'])
 def root():
@@ -78,7 +80,7 @@ def send():
         val = wks.acell(cell).value
         listEmails.append(val)
         pass
-    print listEmails
+    #print listEmails
     if request.method == 'POST':
         for person in listEmails:
             gmail_user = 'brandonium21'
@@ -166,6 +168,5 @@ def send():
             msg.attach(part2)
             smtpserver.sendmail(gmail_user, person, msg.as_string())
             smtpserver.close()
-        return render_template("emailItOut.html", emails=listEmails, done='done')
 
     return render_template("emailItOut.html", emails=listEmails)
