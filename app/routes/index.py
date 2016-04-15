@@ -6,7 +6,7 @@ from oauth2client.client import SignedJwtAssertionCredentials
 import smtplib
 from email.mime.multipart import MIMEMultipart
 from email.mime.text import MIMEText
-
+#lovr
 @app.route('/', methods=['GET', 'POST'])
 def root():
     if request.method == 'POST':
