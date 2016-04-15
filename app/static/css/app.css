@@ -219,6 +219,20 @@ button:hover {
   margin-left: auto;
   margin-right: auto;
 }
+.endorsers{
+	text-align: center;
+	font-family: 'Roboto', sans-serif;
+	font-weight: 300;
+	font-size: 2em;
+	color: #FFFFFF;
+}
+.fundedby{
+	text-align: center;
+	font-family: 'Roboto', sans-serif;
+	font-weight: 300;
+	font-size: 1.5em;
+	color: #89cff0;
+}
 .teamheading{
 	color: #FFFFFF;
 	padding-bottom: 5%;
@@ -317,6 +331,20 @@ button:hover {
 	.button{
 		zoom: 0.8 !important;
 	}
+	.cubelogo{
+	height: 30%;
+	width: 30%;
+	}
+	.msalogo{
+		height: 30%;
+		width: 30%;
+	}
+	.endorsers{
+		font-size: 1.5em;
+	}
+	.fundedby{
+		font-size: 1.5em;
+	}
 }
 
 /*####  iPhone5 in Portrait Orientation #### */
@@ -405,6 +433,20 @@ button:hover {
 	.button{
 		zoom: 0.6 !important;
 	}
+	.cubelogo{
+		height: 30%;
+		width: 30%;
+	}
+	.msalogo{
+		height: 30%;
+		width: 30%;
+	}
+	.endorsers{
+		font-size: 1.5em;
+	}
+	.fundedby{
+		font-size: 1.5em;
+	}
 }
 
 /*####  iPad in Portrait Orientation #### */
@@ -489,5 +531,19 @@ button:hover {
 	}
 	.button{
 		zoom: 0.8 !important;
+	}
+	.cubelogo{
+		height: 35%;
+		width: 35%;
+	}
+	.msalogo{
+		height: 35%;
+		width: 35%;
+	}
+	.endorsers{
+		font-size: 2em;
+	}
+	.fundedby{
+		font-size: 2em;
 	}
 }
